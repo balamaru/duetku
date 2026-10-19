@@ -1,0 +1,31 @@
+<resources>
+    <color name="avatar_eighth">#8B3E70</color>
+    <color name="surface">#F5F4EF</color>
+    <color name="surface_container">#E9E7E0</color>
+    <color name="card">#FFFFFF</color>
+    <color name="balance_surface">#E2EEE7</color>
+    <color name="hero">#204E3D</color>
+    <color name="hero_tile">#315D4C</color>
+    <color name="on_hero">#FFFFFF</color>
+    <color name="hero_muted">#D0E3D8</color>
+    <color name="hero_accent">#F4B89E</color>
+    <color name="avatar">#B85428</color>
+    <color name="input_surface">#FFFFFF</color>
+    <color name="ink">#202823</color>
+    <color name="muted">#606860</color>
+    <color name="primary">#204E3D</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="expense">#B43721</color>
+    <color name="outline">#DEDED5</color>
+    <color name="danger_outline">#DCA99F</color>
+    <color name="danger_surface">#FBEAE6</color>
+    <color name="ripple">#26276C50</color>
+    <color name="chart_second">#3973BC</color>
+    <color name="chart_third">#E58A23</color>
+    <color name="hero_track">#416C5B</color>
+    <color name="hero_income">#9BD7B8</color>
+    <color name="category_orange_surface">#FAEADB</color>
+    <color name="category_blue_surface">#E5EFF9</color>
+    <color name="category_purple_surface">#F0E7F7</color>
+    <color name="chart_fourth">#8950B4</color>
+</resources>

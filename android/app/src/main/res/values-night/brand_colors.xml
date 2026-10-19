@@ -1,0 +1,10 @@
+<resources>
+    <color name="brand_background">#2E281F</color>
+    <color name="brand_outline">#FFF5DB</color>
+    <color name="brand_wallet">#DBB85C</color>
+    <color name="brand_back">#7D6A3A</color>
+    <color name="brand_card_green">#9EB08C</color>
+    <color name="brand_card_cream">#E8DFC7</color>
+    <color name="brand_card_peach">#CA996D</color>
+    <color name="brand_stitch">#9D8240</color>
+</resources>

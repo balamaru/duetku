@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T00:00:00+07:00",
+  "title": "Design System: Kelola Uangku",
+  "extensions": {
+    "motion": [
+      {
+        "name": "navigation-fade",
+        "value": "180ms; alpha 0.65 to 1",
+        "purpose": "Native content transition only when ValueAnimator.areAnimatorsEnabled()."
+      }
+    ],
+    "shadows": [],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ilustrasi HTML dari token native; bukan replika widget Android atau bukti runtime.",
+      "html": "<button class=\"ds-button-primary\">Tambah transaksi</button>",
+      "css": ".ds-button-primary { background:#176B4B; color:#FFFFFF; border:1px solid #C5D7CD; border-radius:14px; padding:16px; font:500 14px sans-serif; min-height:48px; } .ds-button-primary:focus-visible { outline:2px solid #176B4B; outline-offset:2px; } .ds-button-primary:hover { filter:brightness(.97); } .ds-button-primary:active { opacity:.85; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ilustrasi HTML dari token native; bukan replika widget Android atau bukti runtime.",
+      "html": "<button class=\"ds-button-secondary\">Batal</button>",
+      "css": ".ds-button-secondary { background:#E8F0EC; color:#142D24; border:1px solid #C5D7CD; border-radius:14px; padding:16px; font:500 14px sans-serif; min-height:48px; } .ds-button-secondary:focus-visible { outline:2px solid #176B4B; outline-offset:2px; } .ds-button-secondary:hover { filter:brightness(.97); } .ds-button-secondary:active { opacity:.85; }"
+    },
+    {
+      "name": "Active Chip",
+      "kind": "chip",
+      "refersTo": "chip-active",
+      "description": "Ilustrasi HTML dari token native; bukan replika widget Android atau bukti runtime.",
+      "html": "<button class=\"ds-chip-active\">Bulan ini</button>",
+      "css": ".ds-chip-active { background:#176B4B; color:#FFFFFF; border:1px solid #C5D7CD; border-radius:24px; padding:16px; font:500 14px sans-serif; min-height:48px; } .ds-chip-active:focus-visible { outline:2px solid #176B4B; outline-offset:2px; } .ds-chip-active:hover { filter:brightness(.97); } .ds-chip-active:active { opacity:.85; }"
+    },
+    {
+      "name": "Balance Card",
+      "kind": "card",
+      "refersTo": "balance-card",
+      "description": "Ilustrasi HTML dari token native; bukan replika widget Android atau bukti runtime.",
+      "html": "<div tabindex=\"0\" class=\"ds-balance-card\">Saldo periode ? Rp 0</div>",
+      "css": ".ds-balance-card { background:#DCEFE5; color:#142D24; border:1px solid #C5D7CD; border-radius:16px; padding:16px; font:500 14px sans-serif; min-height:48px; } .ds-balance-card:focus-visible { outline:2px solid #176B4B; outline-offset:2px; } .ds-balance-card:hover { filter:brightness(.97); } .ds-balance-card:active { opacity:.85; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Ilustrasi HTML dari token native; bukan replika widget Android atau bukti runtime.",
+      "html": "<div tabindex=\"0\" class=\"ds-navigation\">Ringkasan ? Riwayat ? Kelola</div>",
+      "css": ".ds-navigation { background:#FFFFFF; color:#176B4B; border:1px solid #C5D7CD; border-radius:24px; padding:16px; font:500 14px sans-serif; min-height:48px; } .ds-navigation:focus-visible { outline:2px solid #176B4B; outline-offset:2px; } .ds-navigation:hover { filter:brightness(.97); } .ds-navigation:active { opacity:.85; }"
+    },
+    {
+      "name": "Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Ilustrasi field dan focus outline dari kode native.",
+      "html": "<label class=\"ds-label\">Nominal (Rp)<input class=\"ds-input\" inputmode=\"numeric\" placeholder=\"0\"></label>",
+      "css": ".ds-label { display:grid; gap:8px; color:#4F665C; font:13px sans-serif; } .ds-input { background:#FFFFFF; color:#142D24; padding:12px 14px; border:1px solid #C5D7CD; border-radius:12px; font:16px sans-serif; min-height:28px; } .ds-input:focus-visible { outline:1px solid #176B4B; } .ds-input:hover { border-color:#176B4B; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Catatan keuangan emerald dan mint",
+    "overview": "Arah visual mengikuti referensi pengguna `docs/Redesain Aplikasi Keuangan.pdf`: permukaan emerald gelap, aksen mint, nominal yang mudah ditemukan, dan navigasi bawah. Resource terang memakai struktur dan peran warna yang sama. Implementasi menggunakan Kotlin Views/XML, drawable vector, dan font sistem Android tanpa dependency UI atau font baru.\n\nDokumen ini memperbarui baseline provisional sebelumnya berdasarkan `MainActivity.kt`, `UiKit.kt`, layout dan resource warna. **Validasi visual runtime: UNVERIFIED / BELUM DIUJI**. Tidak ada perangkat ADB atau emulator tersedia saat pencatatan. Screenshot referensi PDF bukan screenshot APK. Hasil build dan pemeriksaan dicatat di docs/UI_REDESIGN.md.",
+    "keyCharacteristics": [
+      "Permukaan tonal dengan sudut lembut dan aksi mint pada mode gelap.",
+      "Bahasa Indonesia, nominal Rupiah, dan angka tabular pada label buatan UiKit.",
+      "Navigasi tiga tab, konten satu kolom, panel bawah untuk detail dan filter.",
+      "Label dan nominal tetap menjelaskan informasi tanpa bergantung pada warna grafik."
+    ],
+    "rules": [
+      {
+        "name": "The Semantic Color Rule",
+        "body": "Pemasukan dan pengeluaran harus tetap terbaca melalui label atau tanda nominal, selain warna.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do gunakan bahasa Indonesia, format Rupiah, dan label tindakan yang jelas.",
+      "Do gunakan resource tema, sp untuk teks, serta kontrol utama minimum 48dp.",
+      "Do verifikasi terang/gelap, font besar, TalkBack, keyboard, rotasi, dan insets pada perangkat sebelum menyatakan render selesai."
+    ],
+    "donts": [
+      "Don't menambahkan dependency font atau UI untuk mereplikasi mockup.",
+      "Don't menyamakan preview dokumentasi atau PDF dengan screenshot APK.",
+      "Don't mengubah retensi, konfirmasi hapus, atau diagnosis startup melalui redesign visual."
+    ]
+  }
+}
